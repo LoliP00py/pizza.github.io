@@ -1,0 +1,37 @@
+img
+            {
+                width: 100px;
+                height: 100px;
+            }
+
+            th
+            {
+                text-align: left;
+            }
+
+            .grid-container-all
+            {
+                display: grid;
+                grid-template-columns: auto auto auto;
+            }
+
+            .grid-container-pizza
+            {
+                display: grid;
+                grid-template-columns: auto auto;
+                background-color: #2196F3;
+            }
+
+            .grid-item
+            {
+                background-color: rgba(255, 255, 255, 0.8);
+                border: 1px solid rgba(0, 0, 0, 0.8);
+                font-size: 30px;
+                text-align: center;
+                border-radius: 25px;
+            }
+
+            .div-in-div-all
+            {
+                align-content: center;
+            }

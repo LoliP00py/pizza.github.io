@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="CCarrello.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+
+    <script type="text/javascript">
+
+        let carrello = new CCarrello();
+
+    </script>
+    <title>Pizza</title>
+</head>
+<body>
+    <div id="all" class="grid-container-all">
+
+        <div id="divPizze" class="grid-container-pizza">
+
+            <div class="grid-item" onclick="cart.aggiungi('margherita');"><img src="images/margherita.jpg"><br><p>margherita</p></div>
+            <div class="grid-item" onclick="cart.aggiungi('prosciutto');"><img src="images/prosciutto.jpg"><br><p>prosciutto</p></div> 
+            <div class="grid-item" onclick="cart.aggiungi('diavola');"><img src="images/diavola.jpg"><br><p>diavola</p></div>
+            <div class="grid-item" onclick="cart.aggiungi('funghi');"><img src="images/funghi.jpg"><br><p>funghi</p></div> 
+            <div class="grid-item" onclick="cart.aggiungi('wurstel');"><img src="images/wurstel.jpg"><br><p>wurstel</p></div>
+            <div class="grid-item" onclick="cart.aggiungi('patatine');"><img src="images/patatine.jpg"><br><p>patatine</p></div>
+
+        </div>
+
+        <div id="cooker">
+
+            <img src="images/pizzaiolo.jpg" style="width: 300px; height: 300px">
+
+        </div>
+
+        <div id="list">
+
+            <table id="pizzas">
+
+                
+                <tr>
+                    <th id="numMargherita">0</th>
+                    <th>margherita</th>
+                </tr>
+                <tr>
+                    <th id="numProsciutto">0</th>
+                    <th>prosciutto</th>
+                </tr>
+                <tr>
+                    <th id="numDiavola">0</th>
+                    <th>diavola</th>
+                </tr>
+                <tr>
+                    <th id="numFunghi">0</th>
+                    <th>funghi</th>
+                </tr>
+                <tr>
+                    <th id="numWurstel">0</th>
+                    <th>wurstel</th>
+                </tr>
+                <tr>
+                    <th id="numPatatine">0</th>
+                    <th>patatine</th>
+                </tr>
+                
+
+            </table>
+
+            <button type="button" onclick="cart.reset();">RESET</button>
+
+        </div>
+
+    </div>
+</body>
+</html>
